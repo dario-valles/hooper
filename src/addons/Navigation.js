@@ -43,17 +43,6 @@ function renderButton(h, disabled, slot, isPrev, { isVertical, isRTL }, onClick)
 export default {
   inject: ['$hooper'],
   name: 'HooperNavigation',
-  props: {
-    // set aria-label button text
-    ariaLabelNext: {
-      default: 'Next',
-      type: String
-    },
-    ariaLabelPrev: {
-      default: 'Previous',
-      type: String
-    }
-  },
   computed: {
     isPrevDisabled() {
       if (this.$hooper.config.infiniteScroll) {
