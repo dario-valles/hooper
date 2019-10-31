@@ -1,6 +1,6 @@
 {
   "name": "hooper-lust",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "A customizable accessible carousel slider optimized for Vue based on Bainat Hooper",
   "module": "dist/hooper.esm.js",
   "unpkg": "dist/hooper.js",
