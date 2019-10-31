@@ -29,7 +29,8 @@ function renderButton(h, disabled, slot, isPrev, { isVertical, isRTL }, onClick)
         'is-disabled': disabled
       },
       attrs: {
-        type: 'button'
+        type: 'button',
+        'aria-label': isPrev ? 'Previous' : 'Next'
       },
       on: {
         click: onClick
@@ -42,6 +43,17 @@ function renderButton(h, disabled, slot, isPrev, { isVertical, isRTL }, onClick)
 export default {
   inject: ['$hooper'],
   name: 'HooperNavigation',
+  props: {
+    // set aria-label button text
+    ariaLabelNext: {
+      default: 'Next',
+      type: String
+    },
+    ariaLabelPrev: {
+      default: 'Previous',
+      type: String
+    }
+  },
   computed: {
     isPrevDisabled() {
       if (this.$hooper.config.infiniteScroll) {
@@ -55,8 +67,10 @@ export default {
       }
 
       if (this.$hooper.config.trimWhiteSpace) {
-        return this.$hooper.currentSlide
-          === (this.$hooper.slidesCount - Math.min(this.$hooper.config.itemsToShow, this.$hooper.slidesCount));
+        return (
+          this.$hooper.currentSlide ===
+          this.$hooper.slidesCount - Math.min(this.$hooper.config.itemsToShow, this.$hooper.slidesCount)
+        );
       }
 
       return this.$hooper.currentSlide === this.$hooper.slidesCount - 1;
