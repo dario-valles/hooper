@@ -1,7 +1,7 @@
 {
-  "name": "hooper",
-  "version": "0.3.6",
-  "description": "A customizable accessible carousel slider optimized for Vue",
+  "name": "hooper-lust",
+  "version": "0.0.9",
+  "description": "A customizable accessible carousel slider optimized for Vue based on Bainat Hooper",
   "module": "dist/hooper.esm.js",
   "unpkg": "dist/hooper.js",
   "main": "dist/hooper.js",
@@ -56,8 +56,12 @@
   "keywords": [],
   "maintainers": [
     {
-      "name": "Abdelrahman3D",
-      "email": "abdelrahman3d@gmail.com"
+      "name": "Rosa",
+      "email": "sbarcelocompte@gmail.com"
+    },
+    {
+      "name": "Dario",
+      "email": "dario.valles@gmail.com"
     }
   ],
   "lint-staged": {

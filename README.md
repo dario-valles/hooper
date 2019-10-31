@@ -12,13 +12,13 @@
 </p>
 
 
-# Hooper
-
-Vue.js carousel component, optimized to work with Vue.
-
+# Hooper-Lust
+​
+Vue.js carousel component, optimized to work with Vue based on Baianat's Hooper.
+​
 ## Features
-
-* Easily customizable through rich API and addons.
+​
+* Easily customizable through rich API and add-ons.
 * Touch, Keyboard, Mouse Wheel, and Navigation support.
 * Two way control carousels (sync).
 * Full RTL layout support.
@@ -28,44 +28,44 @@ Vue.js carousel component, optimized to work with Vue.
 * Accessible by providing a robust structure and user control.
 * Optimized to work with Vue framework.
 * SSR Support.
-
+​
 ## Browser Support
 | ![Chrome](https://raw.github.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png) | ![Firefox](https://raw.github.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png) | ![Safari](https://raw.github.com/alrra/browser-logos/master/src/safari/safari_48x48.png) | ![Opera](https://raw.github.com/alrra/browser-logos/master/src/opera/opera_48x48.png) | ![Edge](https://raw.github.com/alrra/browser-logos/master/src/edge/edge_48x48.png) | ![IE](https://raw.github.com/alrra/browser-logos/master/src/archive/internet-explorer_9-11/internet-explorer_9-11_48x48.png) |
 | --- | --- | --- | --- | --- | --- |
 | Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | 11 ✔ |
-
+​
 ## Getting started
-
+​
 ### Installation
-
+​
 First step is to install it using `yarn` or `npm`:
-
+​
 ```bash
-npm install hooper
-
+npm install hooper-lust
+​
 # or use yarn
-yarn add hooper
+yarn add hooper-lust
 ```
-
+​
 ### Use Hooper
-
+​
 ```vue
 <template>
-  <hooper>
-    <slide>
+  <Hooper>
+    <Slide>
       slide 1
-    </slide>
-    <slide>
+    </Slide>
+    <Slide>
       slide 2
-    </slide>
+    </Slide>
     ...
-  </hooper>
+  </Hooper>
 </template>
-
+​
 <script>
-  import { Hooper, Slide } from 'hooper';
-  import 'hooper/dist/hooper.css';
-
+  import { Hooper, Slide } from 'hooper-lust';
+  import 'hooper-lust/dist/hooper.css';
+​
   export default {
     name: 'App',
     components: {
@@ -75,13 +75,13 @@ yarn add hooper
   }
 </script>
 ```
-
-> If you are using [PurgeCSS](https://www.purgecss.com/), make sure to whitelist hooper css When importing `hooper/dist/hooper.css`.
-
-more info at [Documentation](https://baianat.github.io/hooper/)
-
+​
+> If you are using [PurgeCSS](https://www.purgecss.com/), make sure to whitelist hooper css When importing `hooper-lust/dist/hooper.css`.
+​
+more info at [Baianat Docs](https://baianat.github.io/hooper/)
+​
 ### Available Props
-
+​
 |Prop             |Default |Description|
 |-----------------|-----|-----------|
 |`itemsToShow`    |1    |count of items to showed per view  (can be a fraction).|
@@ -103,12 +103,12 @@ more info at [Documentation](https://baianat.github.io/hooper/)
 |`hoverPause`     |true |pause autoPlay if the mouse enters the slide.|
 |`trimWhiteSpace` |false|limit carousel to slide only when there will be no completely empty slide-space.|
 |`settings`       |{ }  |an object to pass all settings.|
-
+​
 ### Available CSS Properties
-
+​
 Please also look at the source to style the slider. An initial style can be imported as
-`@import '~hooper/dist/hooper.css';`
-
+`@import '~hooper-lust/dist/hooper.css';`
+​
 |Class            | Property | Default | Description|
 |-----------------|----------|---------|------------|
 |`hooper`         | `height` | 200px   | the default height of the slider, set to auto to scale with content
